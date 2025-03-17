@@ -35,3 +35,9 @@ Ez hozzáadja az alap 11 táblát a DB-hez.
 ```console
 python manage.py createsuperuser
 ```
+
+## Alkalmazás indítása
+Az összefüggő logikákat/funkciókat alkalmazásokba rendezzük.
+```console
+python manage.py startapp places
+```
