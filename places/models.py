@@ -10,7 +10,7 @@ class Place(models.Model):
     
 class Route(models.Model):
     from_place = models.ForeignKey(Place, related_name='routes_from', on_delete=models.CASCADE)
-    to_place = models.ForeignKey(Place, related_name='routes_to', on_delete=models.CASCADE)
+    to_place = models.ForeignKey(Place, related_name='routes_to', on_delete=models.CASCADE, null=True, blank=True)
     direction_name = models.CharField(max_length=50)
     is_bidirectional = models.BooleanField(default=False)
 
