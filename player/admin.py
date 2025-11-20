@@ -1,2 +1,3 @@
 from django.contrib import admin
-from .models import Place,Route
+
+# Register your models here.
